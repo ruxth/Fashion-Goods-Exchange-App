@@ -1,0 +1,153 @@
+import Product from "../models/products";
+
+export const CONDITION = [
+  { key: "1", value: "Brand New" },
+  { key: "2", value: "Like New" },
+  { key: "3", value: "Lightly Used" },
+  { key: "4", value: "Well Used" },
+  { key: "5", value: "Heavily Used" },
+];
+
+export const CATEGORY = [
+  { key: "1", value: "Women Clothing" },
+  { key: "2", value: "Men Clothing" },
+  { key: "3", value: "Kids" },
+  { key: "4", value: "Beauty" },
+  { key: "5", value: "Accessories" },
+  { key: "6", value: "Footwear" },
+  { key: "7", value: "Sports" },
+];
+
+import Category from "../models/category";
+
+export const CATEGORIES = [
+  new Category(
+    "c1",
+    "Women Clothing",
+    "https://img.freepik.com/free-photo/portrait-young-japanese-woman-with-jacket_23-2148870730.jpg?w=740&t=st=1705329337~exp=1705329937~hmac=387c90add49ca449360128a53f8d4d9500464bfdabb5d9181f28dc9112a8db8f"
+  ),
+  new Category(
+    "c2",
+    "Men Clothing",
+    "https://img.freepik.com/free-photo/stylish-young-handsome-man-sitting-bench_1303-22536.jpg?w=1380&t=st=1705329389~exp=1705329989~hmac=f0d868f0c3ccbfb7d1d91650d0bcb1d006a84f00b803ab5f42123c3cdf0b1166"
+  ),
+  new Category(
+    "c3",
+    "Kids",
+    "https://img.freepik.com/free-photo/full-shot-smiley-girl-studio_23-2149853327.jpg?t=st=1711905698~exp=1711909298~hmac=5fd38a341fca07f069a85387cd272ff91b4bd6e104c47ce606cec68bdbb8dc52&w=740"
+  ),
+  new Category(
+    "c4",
+    "Beauty",
+    "https://img.freepik.com/free-photo/close-up-collection-make-up-beauty-products_23-2148620012.jpg?t=st=1711905741~exp=1711909341~hmac=a8cfe4c683033cf72ad8a25c8e473719b42c48d169835ef6e97a905686d6e022&w=1380"
+  ),
+  new Category(
+    "c5",
+    "Accessories",
+    "https://img.freepik.com/free-photo/women-s-day-still-life-with-makeup-jewelry_23-2149263160.jpg?w=1380&t=st=1705329535~exp=1705330135~hmac=655b9325c595b6cc1a456ab188f3f09df897a997e8f0fce9809dadf8330165c7"
+  ),
+  new Category(
+    "c6",
+    "Footware",
+    "https://img.freepik.com/free-photo/white-sneakers-woman-model_53876-97149.jpg?w=740&t=st=1705329484~exp=1705330084~hmac=18923a4135f5340f4020dd5c81849f32f953dbc564650dd93cee114439504bec"
+  ),
+  new Category(
+    "c7",
+    "Sports",
+    "https://img.freepik.com/free-photo/woman-has-outdoor-workout-carries-fitness-mat-practice-pilates-exercises-with-instructor-walks-against-city-building-dressed-activewear-listens-songs-from-playlist_273609-54006.jpg?t=st=1711905781~exp=1711909381~hmac=f6fd11be356e55dae787ced88732f056a8b4c51613cf40cddb2b82d9f1e4ac95&w=740"
+  ),
+];
+
+export const LOCATION = [
+  { key: "ew9", value: "Aljunied" },
+  { key: "ne16", value: "Ang Mo Kio" },
+  { key: "dt27", value: "Bukit Panjang" },
+  { key: "ns25", value: "City Hall" },
+  { key: "cc4", value: "Dhoby Ghaut" },
+  { key: "dt21", value: "Downtown" },
+  { key: "ew13", value: "Farrer Park" },
+  { key: "ne7", value: "Little India" },
+  { key: "ns24", value: "Newton" },
+  { key: "dt35", value: "Tampines West" },
+  { key: "ns18", value: "Bras Basah" },
+  { key: "cc23", value: "Buona Vista" },
+  { key: "ns10", value: "Buangkok" },
+  { key: "ne1", value: "HarbourFront" },
+  { key: "ew16", value: "Raffles Place" },
+  { key: "ns28", value: "Marina South Pier" },
+  { key: "ne3", value: "Outram Park" },
+  { key: "ew4", value: "Tanah Merah" },
+  { key: "cc1", value: "Bayfront" },
+  { key: "ew10", value: "Bedok" },
+  { key: "ns23", value: "Somerset" },
+  { key: "ew21", value: "Buangkok" },
+  { key: "cc5", value: "Nicoll Highway" },
+  { key: "ew2", value: "Tampines" },
+  { key: "ew24", value: "Chinese Garden" },
+  { key: "cc21", value: "Holland Village" },
+  { key: "ew15", value: "Tanjong Pagar" },
+  { key: "ns17", value: "Bishan" },
+  { key: "ns8", value: "Little India" },
+  { key: "ns15", value: "Yio Chu Kang" },
+  { key: "cc8", value: "Dakota" },
+  { key: "dt14", value: "Bugis" },
+  { key: "ew5", value: "Bedok North" },
+  { key: "ns6", value: "Dover" },
+  { key: "ew25", value: "Chinese Garden" },
+  { key: "cc15", value: "Kent Ridge" },
+  { key: "ew18", value: "Redhill" },
+  { key: "ns12", value: "Canberra" },
+  { key: "ne17", value: "Punggol" },
+  { key: "cc10", value: "MacPherson" },
+  { key: "ew3", value: "Simei" },
+  { key: "ew20", value: "Commonwealth" },
+  { key: "ew12", value: "Bugis" },
+  { key: "ns20", value: "Novena" },
+  { key: "cc2", value: "Bras Basah" },
+  { key: "ns26", value: "Marina Bay" },
+  { key: "ne5", value: "Clarke Quay" },
+  { key: "dt19", value: "Chinatown" },
+  { key: "cc17", value: "Caldecott" },
+  { key: "ne14", value: "Hougang" },
+  { key: "ns29", value: "Woodlands North" },
+  { key: "ew17", value: "Tiong Bahru" },
+  { key: "cc14", value: "Lorong Chuan" },
+  { key: "dt30", value: "Bedok Reservoir" },
+  { key: "ew11", value: "Lavender" },
+  { key: "cc19", value: "Serangoon" },
+  { key: "dt32", value: "Expo" },
+  { key: "ew1", value: "Pasir Ris" },
+  { key: "ew23", value: "Clementi" },
+  { key: "ne13", value: "Kovan" },
+  { key: "ns7", value: "Kranji" },
+  { key: "dt10", value: "Stevens" },
+  { key: "ew7", value: "Eunos" },
+  { key: "dt23", value: "Hillview" },
+  { key: "ew14", value: "Lakeside" },
+  { key: "ne15", value: "Buangkok" },
+  { key: "ns9", value: "Woodlands" },
+  { key: "ne4", value: "Boon Keng" },
+  { key: "ns2", value: "Bukit Batok" },
+  { key: "ew19", value: "Queenstown" },
+  { key: "ns13", value: "Khatib" },
+  { key: "cc9", value: "Pay Lebar" },
+  { key: "ne10", value: "Potong Pasir" },
+  { key: "dt37", value: "Sengkang Town" },
+  { key: "ew27", value: "Clementi" },
+  { key: "ns21", value: "Newton" },
+  { key: "cc12", value: "Bartley" },
+  { key: "cc26", value: "Pasir Ris" },
+  { key: "dt36", value: "Riviera" },
+  { key: "ne9", value: "Boon Keng" },
+  { key: "dt22", value: "Ghim Moh" },
+  { key: "ne11", value: "Woodleigh" },
+  { key: "dt11", value: "Newton" },
+  { key: "ew6", value: "Kovan" },
+  { key: "ew22", value: "Dover" },
+  { key: "ew4", value: "Tanah Merah" },
+  { key: "ne3", value: "Esplanade" },
+  { key: "cc7", value: "Mountbatten" },
+  { key: "ew1", value: "Pasir Ris" },
+  { key: "cc1", value: "Dhoby Ghaut" },
+  { key: "ns9", value: "Woodlands" },
+];
